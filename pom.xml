@@ -43,6 +43,12 @@
         <org.hibernate.version>5.3.6.Final</org.hibernate.version>
 
         <lombok.version>1.16.10</lombok.version>
+
+        <apache.commons.lang.version>3.4</apache.commons.lang.version>
+        <org.apache.httpcomponents.version>4.5.2</org.apache.httpcomponents.version>
+
+        <com.vladsch.flexmark.version>0.26.4</com.vladsch.flexmark.version>
+        <org.xhtmlrenderer.version>9.0.7</org.xhtmlrenderer.version>
     </properties>
 
     <developers>
@@ -189,6 +195,51 @@
                 <version>${org.hibernate.version}</version>
             </dependency>
             <!-- hibernate-validator end -->
+
+            <!-- commons-lang3 工具包 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache.commons.lang.version}</version>
+            </dependency>
+            <!-- commons-lang3 end -->
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${org.apache.httpcomponents.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>fluent-hc</artifactId>
+                <version>${org.apache.httpcomponents.version}</version>
+            </dependency>
+
+            <!--markdown to html-->
+            <dependency>
+                <groupId>com.vladsch.flexmark</groupId>
+                <artifactId>flexmark</artifactId>
+                <version>${com.vladsch.flexmark.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.vladsch.flexmark</groupId>
+                <artifactId>flexmark-util</artifactId>
+                <version>${com.vladsch.flexmark.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.vladsch.flexmark</groupId>
+                <artifactId>flexmark-ext-tables</artifactId>
+                <version>${com.vladsch.flexmark.version}</version>
+            </dependency>
+            <!--markdown to html end-->
+
+            <!-- html2pdf begin -->
+            <dependency>
+                <groupId>org.xhtmlrenderer</groupId>
+                <artifactId>flying-saucer-pdf-itext5</artifactId>
+                <version>${org.xhtmlrenderer.version}</version>
+            </dependency>
+            <!-- html2pdf end -->
 
         </dependencies>
     </dependencyManagement>
